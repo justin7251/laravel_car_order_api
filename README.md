@@ -7,7 +7,7 @@ Laravel Car Order Api is a small API application using the Laravel framework. Th
 | :---:   | :-: | :-: | :-: |
 | POST | /api/orders | store | orders.store
 | GET | /api/orders/{uuid} | show | orders.show
-| PUT|PATCH | /api/orders/{uuid}| update | orders.update
+| PUT/PATCH | /api/orders/{uuid}| update | orders.update
 
 # Used
 - Laravel 8
