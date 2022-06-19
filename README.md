@@ -34,12 +34,14 @@ If you would like to run the test ensure docker is up the run[docker-compose exe
 
 2. A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications. [F5][1]
 It helps divide traffic and ensure high availability and reliability of services by only sending requests to servers that are online.
-# Readings: 
-(https://www.nginx.com/resources/glossary/load-balancing/)
-(https://towardsdatascience.com/sample-load-balancing-solution-with-docker-and-nginx-cf1ffc60e644)
-(https://blog.laravel.com/vapor-api-gateway-vs-load-balancers)
 
 3. Security is my last but not least area to be imporve, the API request contain a simple field validation, but there might be more work to do, e.g try catch on exception error, text into clean up on any tags <script>.
 Lastly, I would also like to setup OAuth 2.0 for API authentication and authorization standard protects user data by providing access to the data without revealing the user’s identity or credentials.
+
+
+# Readings: 
+ 1. https://www.nginx.com/resources/glossary/load-balancing/
+ 2. https://towardsdatascience.com/sample-load-balancing-solution-with-docker-and-nginx-cf1ffc60e644
+ 3. https://blog.laravel.com/vapor-api-gateway-vs-load-balancers
 
 [1]: https://www.f5.com/services/resources/glossary/load-balancer#:~:text=A%20load%20balancer%20is%20a,users)%20and%20reliability%20of%20applications.
