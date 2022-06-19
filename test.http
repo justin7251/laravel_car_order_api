@@ -1,0 +1,40 @@
+# REST Client Plugin to test the API calls
+@host = http://localhost:8000
+
+
+#view order by using UUID
+GET {{host}}/api/orders/0243a3ae-075d-4d95-89c6-db039f49160d
+
+###
+#create order
+POST {{host}}/api/orders
+Accept: application/json
+Content-Type: application/json
+
+{
+    "buyer_name": "John B",
+    "manufacturer": "Ford",
+    "model": "Focus",
+    "total_price": 1500,
+    "address": "123 high street",
+    "contract_no": "01214960397",
+    "email":"test@test.com",
+    "colour": "black",
+    "registration_no": "C91 1E",
+    "last_mileage": 1800000
+
+}
+
+###
+#update order by using UUID
+PUT {{host}}/api/orders/0243a3ae-075d-4d95-89c6-db039f49160d
+Accept: application/json
+Content-Type: application/json
+
+{
+    "manufacturer": "Toyota",
+    "model": "C4",
+    "total_price": 999,
+    "contract_no": "4456",
+    "email":"test@test.com"
+}

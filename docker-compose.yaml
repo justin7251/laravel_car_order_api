@@ -1,0 +1,26 @@
+version: '4.8'
+services:
+  laravel_car_order_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'php artisan serve --host=0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - laravel_car_order_db
+
+  laravel_car_order_db:
+    image: mysql:5.7.22
+    environment:
+      MYSQL_DATABASE: laravel_car_order
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./storage/dbdata:/var/lib/mysql
+    ports:
+      - 33060:3306
+    network_mode: bridge
