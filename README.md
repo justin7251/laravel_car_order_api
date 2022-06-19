@@ -32,8 +32,9 @@ If you would like to run the test ensure docker is up the run[docker-compose exe
 ## Possible improvement 
 1. PHP Application is much slower running in Docker and if OpCache is being install it can imporve the performance from running the code in shared memory. 
 
-2. A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications.[F5][1]It helps divide traffic and ensure high availability and reliability of services by only sending requests to servers that are online.
-Readings: 
+2. A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications. [F5][1]
+It helps divide traffic and ensure high availability and reliability of services by only sending requests to servers that are online.
+# Readings: 
 (https://www.nginx.com/resources/glossary/load-balancing/)
 (https://towardsdatascience.com/sample-load-balancing-solution-with-docker-and-nginx-cf1ffc60e644)
 (https://blog.laravel.com/vapor-api-gateway-vs-load-balancers)
